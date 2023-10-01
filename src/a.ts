@@ -33,11 +33,11 @@ function makeURL() {
   class3 = makeClassNumber(2, 8, true);
   var userType = makeRandomClub(userTypeOrig);
   var club1 = makeRandomClub(club1Orig);
-  if (random > 0.9) {
+  if (random > 0.8) {
     club1 = "鉄道研究部";
   }
   var club2 = makeRandomClub(club2Orig);
-  if (random > 0.9) {
+  if (random > 0.8) {
     club2 = "大道芸部";
   }
 
