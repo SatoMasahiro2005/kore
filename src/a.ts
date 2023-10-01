@@ -1,6 +1,6 @@
 function makeURL() {
   var random = Math.random();
-  var userTypeOrig = ["生徒", "教員", "保護者", "一般"],
+  var userTypeOrig = ["生徒", "保護者", "一般"],
     club1Orig = [
       "図書委員会",
       "生徒会",
