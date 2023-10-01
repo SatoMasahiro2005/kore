@@ -1,7 +1,7 @@
 "use strict";
 function makeURL() {
     var random = Math.random();
-    var userTypeOrig = ["生徒", "教員", "保護者", "一般"], club1Orig = [
+    var userTypeOrig = ["生徒", "保護者", "一般"], club1Orig = [
         "図書委員会",
         "生徒会",
         "ｴﾚｸﾄﾛﾆｸｽ部",
@@ -22,7 +22,7 @@ function makeURL() {
         "演劇部",
         "軽音楽部",
         "大道芸部",
-    ], class1, class2, class3, sentence = "";
+    ], class1, class2, class3, sentence = "インターネットでお困りなら当職にお任せ下さいナリ";
     class1 = makeClassNumber(3, 8);
     class2 = makeClassNumber(1, 8);
     class3 = makeClassNumber(2, 8, true);
