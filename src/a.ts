@@ -49,7 +49,10 @@ function makeURL() {
   var checked = <HTMLInputElement>document.getElementById("c");
   var sentenceElement = <HTMLInputElement>document.getElementById("sentence");
   if (checked.checked == true) {
-    reqURL = reqURL + `&entry.728838333=${sentenceElement.value}`;
+    if (sentenceElement.value != "") {
+      sentence = sentenceElement.value;
+    }
+    reqURL = reqURL + `&entry.728838333=${sentence}`;
   }
   //
   var output = encodeURI(reqURL);
