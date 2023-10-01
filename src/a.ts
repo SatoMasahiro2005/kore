@@ -40,9 +40,18 @@ function makeURL() {
   if (random > 0.8) {
     club2 = "軽音楽部";
   }
+
   console.log(userType, class1, class2, class3, club1, club2);
   var reqURL: string = `https://docs.google.com/forms/d/e/1FAIpQLSf-xE3t6zI7KFGZqLLiL_FxZnd9uoA1WmSj4NsC-PPYDTzADA/formResponse?entry.1000339570=${userType}&entry.350653609=${class1}&entry.297283329=${class2}&entry.814647229=${club1}&entry.1291703670=${class3}&entry.1314049338=${club2}`;
   //&entry.728838333=${sentence}
+  //
+
+  var checked = <HTMLInputElement>document.getElementById("c");
+  var sentenceElement = <HTMLInputElement>document.getElementById("sentence");
+  if (checked.checked == true) {
+    reqURL = reqURL + `&entry.728838333=${sentenceElement.value}`;
+  }
+  //
   var output = encodeURI(reqURL);
   //console.log(reqURL);
   //console.log(output);
