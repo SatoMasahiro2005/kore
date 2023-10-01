@@ -29,11 +29,11 @@ function makeURL() {
     var userType = makeRandomClub(userTypeOrig);
     var club1 = makeRandomClub(club1Orig);
     if (random > 0.8) {
-        club1 = "ｴﾚｸﾄﾛﾆｸｽ部";
+        club1 = "鉄道研究部";
     }
     var club2 = makeRandomClub(club2Orig);
     if (random > 0.8) {
-        club2 = "軽音楽部";
+        club2 = "大道芸部";
     }
     console.log(userType, class1, class2, class3, club1, club2);
     var reqURL = `https://docs.google.com/forms/d/e/1FAIpQLSf-xE3t6zI7KFGZqLLiL_FxZnd9uoA1WmSj4NsC-PPYDTzADA/formResponse?entry.1000339570=${userType}&entry.350653609=${class1}&entry.297283329=${class2}&entry.814647229=${club1}&entry.1291703670=${class3}&entry.1314049338=${club2}`;
