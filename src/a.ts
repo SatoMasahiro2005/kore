@@ -27,7 +27,7 @@ function makeURL() {
     class1,
     class2,
     class3,
-    sentence = "";
+    sentence = "インターネットでお困りなら当職にお任せ下さいナリ";
   class1 = makeClassNumber(3, 8);
   class2 = makeClassNumber(1, 8);
   class3 = makeClassNumber(2, 8, true);
